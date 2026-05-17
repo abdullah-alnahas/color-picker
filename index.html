@@ -112,6 +112,20 @@
     --accent: oklch(0.78 0.11 290); --accent-soft: oklch(0.33 0.08 290); --accent-deep: oklch(0.84 0.09 290);
   }
 
+  /* ===== Brave (warm coral → magenta → violet on cool neutral) ===== */
+  [data-palette="brave"] {
+    --bg: oklch(0.97 0.006 250); --bg-tint: oklch(0.945 0.010 250); --surface: oklch(0.99 0.004 250);
+    --ink: oklch(0.20 0.025 280); --ink-soft: oklch(0.40 0.020 280); --ink-mute: oklch(0.58 0.016 275);
+    --ink-faint: oklch(0.78 0.012 260); --rule: oklch(0.90 0.012 250); --rule-soft: oklch(0.94 0.008 250);
+    --accent: oklch(0.62 0.24 358); --accent-soft: oklch(0.93 0.06 10); --accent-deep: oklch(0.52 0.22 358);
+  }
+  [data-palette="brave"][data-theme="dark"] {
+    --bg: oklch(0.18 0.020 280); --bg-tint: oklch(0.15 0.020 280); --surface: oklch(0.23 0.022 280);
+    --ink: oklch(0.92 0.014 280); --ink-soft: oklch(0.74 0.012 280); --ink-mute: oklch(0.58 0.013 280);
+    --ink-faint: oklch(0.42 0.012 280); --rule: oklch(0.33 0.020 280); --rule-soft: oklch(0.27 0.018 280);
+    --accent: oklch(0.72 0.20 358); --accent-soft: oklch(0.33 0.10 358); --accent-deep: oklch(0.82 0.16 350);
+  }
+
   /* ===== Static design tokens ===== */
   :root {
     --radius: 12px;
@@ -1096,6 +1110,7 @@
           <button class="pdot" data-palette="cream"    type="button" data-i18n-title="palCream"    data-i18n-aria="palCream"    style="background:oklch(0.65 0.16 40)"></button>
           <button class="pdot" data-palette="mono"     type="button" data-i18n-title="palMono"     data-i18n-aria="palMono"     style="background:oklch(0.30 0 0)"></button>
           <button class="pdot" data-palette="midnight" type="button" data-i18n-title="palMidnight" data-i18n-aria="palMidnight" style="background:oklch(0.55 0.18 290)"></button>
+          <button class="pdot" data-palette="brave"    type="button" data-i18n-title="palBrave"    data-i18n-aria="palBrave"    style="background:linear-gradient(135deg,oklch(0.70 0.18 35) 10%,oklch(0.62 0.24 358) 50%,oklch(0.68 0.16 290) 90%)"></button>
           <button class="pdot pdot-auto" data-palette="auto" type="button" data-i18n-title="palAuto" data-i18n-aria="palAuto" id="pdotAuto" aria-label="Auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
         </div>
       </div>
@@ -1272,7 +1287,7 @@
   const HISTORY_KEY = 'colorpicker.history.v1';
   const PALETTE_KEY = 'colorpicker.palette.v1';
   const THEME_KEY = 'colorpicker.theme.v1';
-  const VALID_PALETTES = ['paper','slate','forest','cream','mono','midnight','auto'];
+  const VALID_PALETTES = ['paper','slate','forest','cream','mono','midnight','brave','auto'];
   const FORMAT_LIST = ['hex','hex8','rgb','rgba','hsl','hsv','oklch','cmyk'];
 
   // ===== i18n / Language =====
@@ -1333,6 +1348,7 @@
       palCream: 'Cream',
       palMono: 'Mono',
       palMidnight: 'Midnight',
+      palBrave: 'Brave',
       themeToggle: 'Toggle dark/light theme',
       copyHexTitle: 'Copy hex color',
       copyRgbTitle: 'Copy RGB values',
@@ -1437,6 +1453,7 @@
       palCream: '\u0643\u0631\u064A\u0645\u064A',
       palMono: '\u0623\u062D\u0627\u062F\u064A',
       palMidnight: '\u0645\u0646\u062A\u0635\u0641 \u0627\u0644\u0644\u064A\u0644',
+      palBrave: '\u0628\u0631\u064A\u0641',
       themeToggle: '\u062A\u0628\u062F\u064A\u0644 \u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u0645\u0638\u0644\u0645/\u0627\u0644\u0641\u0627\u062A\u062D',
       copyHexTitle: '\u0646\u0633\u062E \u0627\u0644\u0643\u0648\u062F HEX',
       copyRgbTitle: '\u0646\u0633\u062E \u0642\u064A\u0645 RGB',
