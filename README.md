@@ -2,6 +2,20 @@
 
 Single-file browser tool. Drop an image, pick any pixel, copy the hex. Extract a palette. Export to JSON, CSS, Tailwind, Markdown, SVG, prompt.
 
+## Demo
+
+A vibrant landscape on the light theme — range of greens, blues, and warm sky tones.
+
+![Light theme — vibrant landscape](screenshots/demo-light-vibrant.png)
+
+A misty gradient on the dark midnight theme — shows subtle transitions and the picker's precision.
+
+![Dark theme — gradient scene](screenshots/demo-dark-gradient.png)
+
+Auto-theme follows the image — UI accents pulled from the source colors.
+
+![Auto theme — bold subject](screenshots/demo-auto-theme.png)
+
 ## Features
 
 - Pixel-perfect color picking with magnifier
