@@ -2,6 +2,8 @@
 
 Single-file browser tool. Drop an image, pick any pixel, copy the hex. Extract a palette. Export to JSON, CSS, Tailwind, Markdown, SVG, prompt.
 
+**Live demo:** [abdullah-alnahas.github.io/color-picker](https://abdullah-alnahas.github.io/color-picker/)
+
 ## Demo
 
 A vibrant landscape on the light theme — range of greens, blues, and warm sky tones.
@@ -30,7 +32,7 @@ Auto-theme follows the image — UI accents pulled from the source colors.
 
 ## Run
 
-Open `index.html` directly, or visit the hosted version.
+Open [the live demo](https://abdullah-alnahas.github.io/color-picker/), or open `index.html` directly in any browser.
 
 ## License
 
